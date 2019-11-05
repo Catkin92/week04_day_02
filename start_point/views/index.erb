@@ -1,0 +1,15 @@
+<h1>Film Titles</h1>
+<% for @title in @titles %>
+
+<% case @title %>
+<% when "Ghost" %>
+  <h4><a href="http://localhost:4567/films/ghost"><%=@title%></a></h4>
+<% when "The Sixth Sense" %>
+<h4><a href="http://localhost:4567/films/sixth-sense"><%=@title%></a></h4>
+<% when "Beetlejuice" %>
+<h4><a href="http://localhost:4567/films/beetlejuice"><%=@title%></a></h4>
+<% when "Casper" %>
+<h4><a href="http://localhost:4567/films/casper"><%=@title%></a></h4>
+<% end %>
+
+<%end%>
